@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head('About Us — SANVEX Technologies')}"></head>
+<body>
+
+<th:block th:replace="~{fragments :: navbar('about')}"></th:block>
+
+<main>
+  <div class="page-header">
+    <div class="page-header-inner">
+      <div class="section-label">About SANVEX</div>
+      <h1 class="page-title">Who We Are &amp;<br/>Why We Exist</h1>
+      <p class="page-subtitle">Founded on the belief that every organization — regardless of size — deserves professional-grade security and trustworthy data recovery.</p>
+    </div>
+  </div>
+
+  <!-- Mission & Story -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div>
+          <div class="section-label">Our Story</div>
+          <h2 class="section-title">Protecting Trust.<br/>Recovering Possibilities.</h2>
+          <p style="color:var(--text-secondary);line-height:1.8;margin-bottom:1.5rem;font-size:0.9375rem;">
+            SANVEX Technologies was founded with a single purpose: to make professional cybersecurity and data recovery accessible.
+            Too many organizations suffer data breaches or permanent data loss simply because they lacked access to the right expertise at the right time.
+          </p>
+          <p style="color:var(--text-secondary);line-height:1.8;margin-bottom:1.5rem;font-size:0.9375rem;">
+            Our name says it all — <strong style="color:var(--text-primary);">Secure. Assure. Navigate.</strong> with <strong style="color:var(--text-primary);">Vision &amp; Excellence.</strong>
+            Every engagement we take on reflects these values. We don't just identify problems — we guide clients through solving them.
+          </p>
+          <p style="color:var(--text-secondary);line-height:1.8;font-size:0.9375rem;">
+            We started because we saw a gap: businesses were paying the price for security vulnerabilities that were entirely preventable.
+            Data was being lost permanently when recovery was possible. We're here to change that.
+          </p>
+        </div>
+        <div class="about-visual">
+          <div class="about-terminal">
+            <div class="terminal-header">
+              <span class="terminal-dot terminal-dot-red"></span>
+              <span class="terminal-dot terminal-dot-yellow"></span>
+              <span class="terminal-dot terminal-dot-green"></span>
+              <span class="terminal-title">sanvex@mission ~ </span>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-line">
+                <span class="terminal-prompt">$</span>
+                <span class="terminal-cmd type-in" data-text="./sanvex --identity"></span>
+              </div>
+              <div class="terminal-output">Name: SANVEX Technologies</div>
+              <div class="terminal-output green">Mission: Protecting Trust. Recovering Possibilities.</div>
+              <div class="terminal-line" style="margin-top:0.75rem;">
+                <span class="terminal-prompt">$</span>
+                <span class="terminal-cmd type-in" data-text="./sanvex --values"></span>
+              </div>
+              <div class="terminal-output">S → Secure digital assets</div>
+              <div class="terminal-output">A → Assure client confidence</div>
+              <div class="terminal-output">N → Navigate the digital world</div>
+              <div class="terminal-output">V → Vision for future threats</div>
+              <div class="terminal-output green">E → Excellence in every delivery</div>
+              <div class="terminal-line" style="margin-top:0.75rem;">
+                <span class="terminal-prompt">$</span>
+                <span class="terminal-cursor"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Values -->
+  <section class="section" id="values">
+    <div class="section-inner">
+      <div class="text-center mb-4">
+        <div class="section-label" style="justify-content:center;">SANVEX Decoded</div>
+        <h2 class="section-title" style="margin:0 auto 1rem;">Our Values, In Our Name</h2>
+        <p class="section-subtitle" style="margin:0 auto;">Every letter in SANVEX represents a principle we hold ourselves to on every engagement.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;margin-top:2.5rem;">
+        <div class="card fade-in" data-delay="0">
+          <div style="font-family:var(--font-display);font-size:2.5rem;font-weight:700;color:var(--accent-cyan);margin-bottom:0.5rem;line-height:1;">S</div>
+          <div style="font-family:var(--font-display);font-size:1.125rem;font-weight:600;color:var(--text-primary);margin-bottom:0.5rem;">Secure</div>
+          <p class="card-text">Protecting digital assets and infrastructure. Security is not a feature — it is the foundation every digital system must be built upon.</p>
+        </div>
+        <div class="card fade-in" data-delay="80">
+          <div style="font-family:var(--font-display);font-size:2.5rem;font-weight:700;color:var(--accent-cyan);margin-bottom:0.5rem;line-height:1;">A</div>
+          <div style="font-family:var(--font-display);font-size:1.125rem;font-weight:600;color:var(--text-primary);margin-bottom:0.5rem;">Assure</div>
+          <p class="card-text">Giving clients confidence through professional, thorough work. You shouldn't have to wonder whether your systems are safe — you should know.</p>
+        </div>
+        <div class="card fade-in" data-delay="160">
+          <div style="font-family:var(--font-display);font-size:2.5rem;font-weight:700;color:var(--accent-cyan);margin-bottom:0.5rem;line-height:1;">N</div>
+          <div style="font-family:var(--font-display);font-size:1.125rem;font-weight:600;color:var(--text-primary);margin-bottom:0.5rem;">Navigate</div>
+          <p class="card-text">Helping organizations move safely through the digital world. The threat landscape evolves — we help you find the safest path forward.</p>
+        </div>
+        <div class="card fade-in" data-delay="240">
+          <div style="font-family:var(--font-display);font-size:2.5rem;font-weight:700;color:var(--accent-cyan);margin-bottom:0.5rem;line-height:1;">V</div>
+          <div style="font-family:var(--font-display);font-size:1.125rem;font-weight:600;color:var(--text-primary);margin-bottom:0.5rem;">Vision</div>
+          <p class="card-text">Looking ahead to future threats and emerging technologies. We don't just react to today's threats — we anticipate tomorrow's.</p>
+        </div>
+        <div class="card fade-in" data-delay="320">
+          <div style="font-family:var(--font-display);font-size:2.5rem;font-weight:700;color:var(--accent-cyan);margin-bottom:0.5rem;line-height:1;">EX</div>
+          <div style="font-family:var(--font-display);font-size:1.125rem;font-weight:600;color:var(--text-primary);margin-bottom:0.5rem;">Excellence</div>
+          <p class="card-text">Delivering high-quality, ethical services on every engagement. Every report, recovery, and recommendation reflects our commitment to excellence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2 class="cta-title">Work with a Team<br/><span class="hero-title-accent">You Can Trust</span></h2>
+      <p class="cta-subtitle">Get in touch and let's talk about how SANVEX can help protect and support your digital operations.</p>
+      <div class="cta-buttons">
+        <a href="/contact" class="btn btn-primary">Start a Conversation</a>
+        <a href="/solutions" class="btn btn-outline">View Our Solutions</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<th:block th:replace="~{fragments :: footer}"></th:block>
+<script th:src="@{/js/main.js}"></script>
+</body>
+</html>

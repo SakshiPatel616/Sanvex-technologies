@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head('Industries — SANVEX Technologies')}"></head>
+<body>
+
+<th:block th:replace="~{fragments :: navbar('industries')}"></th:block>
+
+<main>
+  <div class="page-header">
+    <div class="page-header-inner">
+      <div class="section-label">Who We Serve</div>
+      <h1 class="page-title">Industries We Work With</h1>
+      <p class="page-subtitle">Our services are industry-agnostic — if you have digital assets and a web presence, we can help you protect them.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="industries-grid">
+        <div class="industry-card fade-in" data-delay="0">
+          <div class="industry-icon">🏢</div>
+          <div class="industry-name">Small &amp; Medium Businesses</div>
+          <p class="industry-desc">SMBs are frequently targeted because they're perceived as less protected. We bring enterprise-grade security to businesses of every size.</p>
+        </div>
+        <div class="industry-card fade-in" data-delay="80">
+          <div class="industry-icon">🚀</div>
+          <div class="industry-name">Startups</div>
+          <p class="industry-desc">Early-stage companies move fast and often ship vulnerable code. We help you identify and fix issues before they become incidents.</p>
+        </div>
+        <div class="industry-card fade-in" data-delay="160">
+          <div class="industry-icon">🎓</div>
+          <div class="industry-name">Educational Institutions</div>
+          <p class="industry-desc">Schools and universities store vast amounts of sensitive student and faculty data. We help protect it from unauthorized access.</p>
+        </div>
+        <div class="industry-card fade-in" data-delay="240">
+          <div class="industry-icon">🏥</div>
+          <div class="industry-name">Healthcare</div>
+          <p class="industry-desc">Patient records are highly valuable targets. We provide security assessments that help healthcare providers protect sensitive medical information.</p>
+        </div>
+        <div class="industry-card fade-in" data-delay="320">
+          <div class="industry-icon">🛒</div>
+          <div class="industry-name">E-Commerce</div>
+          <p class="industry-desc">Online stores handle payment data and customer information. A breach is not just a technical problem — it's a business one. We prevent that.</p>
+        </div>
+        <div class="industry-card fade-in" data-delay="400">
+          <div class="industry-icon">👔</div>
+          <div class="industry-name">Professional Services</div>
+          <p class="industry-desc">Law firms, consultancies, and agencies hold confidential client data. We help professional service providers meet their duty of care.</p>
+        </div>
+      </div>
+
+      <div class="card mt-4 fade-in" style="margin-top:3rem;text-align:center;">
+        <div class="section-label" style="justify-content:center;margin-bottom:1rem;">Don't see your industry?</div>
+        <h3 class="card-title" style="font-size:1.25rem;text-align:center;">If you have a web application or critical data, we can help.</h3>
+        <p class="card-text" style="max-width:500px;margin:0.75rem auto 1.5rem;">Our methodology adapts to any industry context. Reach out and we'll let you know how we can tailor our services to your needs.</p>
+        <a href="/contact" class="btn btn-primary">Talk to Us</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<th:block th:replace="~{fragments :: footer}"></th:block>
+<script th:src="@{/js/main.js}"></script>
+</body>
+</html>

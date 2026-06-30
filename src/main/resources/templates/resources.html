@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head('Resources — SANVEX Technologies')}"></head>
+<body>
+
+<th:block th:replace="~{fragments :: navbar('resources')}"></th:block>
+
+<main>
+  <div class="page-header">
+    <div class="page-header-inner">
+      <div class="section-label">Knowledge Hub</div>
+      <h1 class="page-title">Resources</h1>
+      <p class="page-subtitle">Professional companies educate. Explore our guides, tips, and articles to make better decisions about your security and data.</p>
+    </div>
+  </div>
+
+  <!-- Blog Posts -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-label">Blog</div>
+      <h2 class="section-title" style="margin-bottom:2rem;">Latest Articles</h2>
+      <div class="resources-grid">
+        <div class="resource-card fade-in" data-delay="0">
+          <div class="resource-type">Security</div>
+          <div class="resource-title">Top 10 Web Application Vulnerabilities You Should Know About</div>
+          <p class="resource-excerpt">From SQL injection to broken access control — understanding the OWASP Top 10 is the starting point for any web security strategy.</p>
+          <a href="#" class="resource-link">Read article →</a>
+        </div>
+        <div class="resource-card fade-in" data-delay="80">
+          <div class="resource-type">Data Recovery</div>
+          <div class="resource-title">What to Do Immediately After Accidental Data Deletion</div>
+          <p class="resource-excerpt">The first steps you take after losing data are the most critical. Here's exactly what to do — and what not to do — to maximize recovery chances.</p>
+          <a href="#" class="resource-link">Read article →</a>
+        </div>
+        <div class="resource-card fade-in" data-delay="160">
+          <div class="resource-type">Security Tips</div>
+          <div class="resource-title">How Regular VAPT Can Save Your Business from a Breach</div>
+          <p class="resource-excerpt">A single security assessment is a snapshot. A regular testing schedule is a strategy. Here's why frequency matters.</p>
+          <a href="#" class="resource-link">Read article →</a>
+        </div>
+        <div class="resource-card fade-in" data-delay="240">
+          <div class="resource-type">Guide</div>
+          <div class="resource-title">Understanding Drive Failure: Logical vs Physical</div>
+          <p class="resource-excerpt">Not all data loss is the same. Understanding the difference between logical and physical failure determines what kind of help you need.</p>
+          <a href="#" class="resource-link">Read article →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Security Tips -->
+  <section class="section" style="background:linear-gradient(180deg,var(--navy-950) 0%,var(--navy-900) 100%);">
+    <div class="section-inner">
+      <div class="section-label">Quick Wins</div>
+      <h2 class="section-title" style="margin-bottom:2rem;">Security Tips</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;">
+        <div class="card fade-in" data-delay="0">
+          <div class="card-icon card-icon-cyan">🔒</div>
+          <div class="card-title">Keep Dependencies Updated</div>
+          <p class="card-text">Outdated libraries are one of the most common attack vectors. Run dependency audits regularly and update promptly when patches are released.</p>
+        </div>
+        <div class="card fade-in" data-delay="80">
+          <div class="card-icon card-icon-cyan">🛡️</div>
+          <div class="card-title">Enforce Input Validation</div>
+          <p class="card-text">Never trust user input. Validate and sanitize all input server-side, and use parameterized queries to prevent injection attacks.</p>
+        </div>
+        <div class="card fade-in" data-delay="160">
+          <div class="card-icon card-icon-cyan">🔑</div>
+          <div class="card-title">Implement Least Privilege</div>
+          <p class="card-text">Every user and service should have the minimum permissions needed to function. This contains the blast radius if an account is compromised.</p>
+        </div>
+        <div class="card fade-in" data-delay="240">
+          <div class="card-icon card-icon-cyan">📊</div>
+          <div class="card-title">Enable Logging &amp; Monitoring</div>
+          <p class="card-text">Security events you can't see are threats you can't respond to. Set up centralized logging and alert on anomalous patterns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title" style="margin-bottom:2.5rem;">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            What is a VAPT and why do I need one?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">A Vulnerability Assessment and Penetration Test (VAPT) is a structured process where security professionals attempt to identify and exploit vulnerabilities in your web application — before malicious actors do. It gives you a clear picture of your security posture and specific guidance on what to fix.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            How long does a security assessment take?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Timelines depend on the scope and complexity of your application. A focused assessment of a single application typically takes 5–10 business days from kickoff to final report. We'll give you a precise timeline during scoping.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Can you recover data from a formatted drive?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">In many cases, yes. Formatting a drive removes the file system index but doesn't immediately erase the data. As long as the storage hasn't been heavily overwritten since the format, recovery is often possible. The sooner you contact us after the event, the better.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            What types of storage devices do you recover from?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">We support logical recovery from traditional HDDs, solid-state drives (SSDs), USB flash drives, SD cards, and other removable media. All cases involve logical failures — no physical disassembly is required for our services.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Is penetration testing safe for my production systems?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes. Before any testing begins, we agree on scope and rules of engagement to protect your production environment. We can work against staging environments when production testing carries risk, and all testing is coordinated to avoid downtime.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<th:block th:replace="~{fragments :: footer}"></th:block>
+<script th:src="@{/js/main.js}"></script>
+</body>
+</html>

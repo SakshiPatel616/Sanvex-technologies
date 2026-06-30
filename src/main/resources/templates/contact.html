@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head('Contact — SANVEX Technologies')}"></head>
+<body>
+
+<th:block th:replace="~{fragments :: navbar('contact')}"></th:block>
+
+<main>
+  <div class="page-header">
+    <div class="page-header-inner">
+      <div class="section-label">Get in Touch</div>
+      <h1 class="page-title">Contact Us</h1>
+      <p class="page-subtitle">Whether you need a security assessment, emergency data recovery, or just want to ask a question — we're here.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="contact-grid">
+        <!-- Info -->
+        <div>
+          <div class="section-label" style="margin-bottom:1.5rem;">Contact Information</div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📧</div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value">sanvextechnologies@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">🕐</div>
+            <div>
+              <div class="contact-info-label">Response Time</div>
+              <div class="contact-info-value">Within 24 hours</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">🌍</div>
+            <div>
+              <div class="contact-info-label">Service Area</div>
+              <div class="contact-info-value">Remote &amp; On-site Available</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">🔐</div>
+            <div>
+              <div class="contact-info-label">Initial Consultation</div>
+              <div class="contact-info-value">Free of charge</div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:2rem;background:var(--accent-cyan-dim);border-color:var(--border-active);">
+            <div style="font-family:var(--font-mono);font-size:0.7rem;color:var(--accent-cyan);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:0.75rem;">Emergency Data Recovery</div>
+            <p style="font-size:0.875rem;color:var(--text-secondary);line-height:1.65;margin-bottom:1rem;">Lost critical data? Stop using the affected device immediately and contact us. Time matters for recovery success.</p>
+            <div style="font-family:var(--font-display);font-size:0.9rem;font-weight:600;color:var(--accent-cyan);">Priority response available</div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form">
+          <div class="section-label" style="margin-bottom:1.5rem;">Send a Message</div>
+
+          <!-- Success message -->
+          <div th:if="${successMessage}" class="alert-success">
+            <span>✅</span>
+            <span th:text="${successMessage}"></span>
+          </div>
+
+          <form th:action="@{/contact/submit}" th:object="${contactForm}" method="post" data-validate="true">
+            <div class="form-row">
+              <div>
+                <label for="name" class="form-label">Full Name *</label>
+                <input type="text" id="name" th:field="*{name}" class="form-control" placeholder="Jane Smith" required minlength="2"/>
+                <div id="name-error" class="form-error" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
+              </div>
+              <div>
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" id="email" th:field="*{email}" class="form-control" placeholder="jane@company.com" required/>
+                <div id="email-error" class="form-error" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div>
+                <label for="company" class="form-label">Company / Organization</label>
+                <input type="text" id="company" th:field="*{company}" class="form-control" placeholder="Your company name"/>
+              </div>
+              <div>
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" id="phone" th:field="*{phone}" class="form-control" placeholder="+1 (555) 000-0000"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service" class="form-label">Service Interested In</label>
+              <select id="service" th:field="*{service}" class="form-control">
+                <option value="">Select a service...</option>
+                <option value="vapt">Web Application Security Assessment (VAPT)</option>
+                <option value="recovery">Digital Data Recovery</option>
+                <option value="diagnostics">Storage Diagnostics</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message *</label>
+              <textarea id="message" th:field="*{message}" class="form-control" placeholder="Describe your situation or what you're looking for..." required minlength="10"></textarea>
+              <div id="message-error" class="form-error" th:if="${#fields.hasErrors('message')}" th:errors="*{message}"></div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+            <p style="font-size:0.75rem;color:var(--text-muted);text-align:center;margin-top:1rem;">We respond to all enquiries within 24 hours. Your information is kept strictly confidential.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<th:block th:replace="~{fragments :: footer}"></th:block>
+<script th:src="@{/js/main.js}"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head('Solutions — SANVEX Technologies')}"></head>
+<body>
+
+<th:block th:replace="~{fragments :: navbar('solutions')}"></th:block>
+
+<main>
+  <div class="page-header">
+    <div class="page-header-inner">
+      <div class="section-label">What We Offer</div>
+      <h1 class="page-title">Our Solutions</h1>
+      <p class="page-subtitle">Two specialized service lines, each designed with professional methodology and clear deliverables.</p>
+    </div>
+  </div>
+
+  <!-- Cybersecurity Solutions -->
+  <section class="section" id="vapt">
+    <div class="section-inner">
+      <div class="section-label">Cybersecurity</div>
+      <h2 class="section-title">Web Application Security Assessment</h2>
+      <p class="section-subtitle" style="margin-bottom:3rem;">Structured vulnerability assessment and penetration testing that gives you a real picture of your web application's security posture.</p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+        <div>
+          <div class="card" style="margin-bottom:1.5rem;">
+            <div class="card-icon card-icon-cyan">🎯</div>
+            <div class="card-title">Purpose</div>
+            <p class="card-text">Identify and validate security vulnerabilities within web applications through structured assessments that simulate real-world attacks without causing harm to production systems.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon card-icon-cyan">📄</div>
+            <div class="card-title">What You Receive</div>
+            <ul class="service-features">
+              <li class="service-feature-item">Executive summary for stakeholders</li>
+              <li class="service-feature-item">Technical report with evidence &amp; PoC</li>
+              <li class="service-feature-item">Risk-classified vulnerability list</li>
+              <li class="service-feature-item">Prioritized remediation guidance</li>
+              <li class="service-feature-item">Re-assessment after fixes</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="section-label" style="margin-bottom:1.5rem;">Assessment Process</div>
+          <div class="process-steps">
+            <div class="process-step fade-in" data-delay="0">
+              <div class="step-number">01</div>
+              <div>
+                <div class="step-title">Scope Definition</div>
+                <div class="step-text">We agree on what will be tested — specific domains, features, and user roles — to ensure coverage and avoid surprises.</div>
+              </div>
+            </div>
+            <div class="process-step fade-in" data-delay="80">
+              <div class="step-number">02</div>
+              <div>
+                <div class="step-title">Manual Security Testing</div>
+                <div class="step-text">Our analysts perform hands-on testing to uncover logic flaws, authentication issues, injection points, and access control weaknesses.</div>
+              </div>
+            </div>
+            <div class="process-step fade-in" data-delay="160">
+              <div class="step-number">03</div>
+              <div>
+                <div class="step-title">Automated Validation</div>
+                <div class="step-text">Automated scanners supplement manual testing to ensure complete surface coverage across the application.</div>
+              </div>
+            </div>
+            <div class="process-step fade-in" data-delay="240">
+              <div class="step-number">04</div>
+              <div>
+                <div class="step-title">Vulnerability Verification</div>
+                <div class="step-text">Every finding is validated to eliminate false positives before it reaches your report.</div>
+              </div>
+            </div>
+            <div class="process-step fade-in" data-delay="320">
+              <div class="step-number">05</div>
+              <div>
+                <div class="step-title">Risk Classification &amp; Reporting</div>
+                <div class="step-text">Findings are classified by severity using industry-standard frameworks and documented with clear evidence.</div>
+              </div>
+            </div>
+            <div class="process-step fade-in" data-delay="400">
+              <div class="step-number">06</div>
+              <div>
+                <div class="step-title">Remediation &amp; Re-Assessment</div>
+                <div class="step-text">We provide fix guidance and a free re-test to confirm vulnerabilities have been properly resolved.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Data Recovery Solutions -->
+  <section class="section" id="recovery" style="background:linear-gradient(180deg,var(--navy-950) 0%,var(--navy-900) 100%);">
+    <div class="section-inner">
+      <div class="section-label">Data Recovery</div>
+      <h2 class="section-title">Digital Data Recovery</h2>
+      <p class="section-subtitle" style="margin-bottom:3rem;">Professional recovery of critical business and personal data from storage devices affected by logical failures. We recover what you thought was gone.</p>
+
+      <div class="services-grid">
+        <div class="service-big-card fade-in" data-delay="0">
+          <span class="service-tag" style="background:var(--accent-green-dim);border-color:rgba(0,255,136,0.3);color:var(--accent-green);">💾 Recovery Services</span>
+          <h3 class="service-big-title">Digital Data Recovery</h3>
+          <p class="service-big-text">We recover data from storage devices where the data still exists but is inaccessible due to logical issues — no physical disassembly required.</p>
+          <ul class="service-features">
+            <li class="service-feature-item">Deleted File Recovery</li>
+            <li class="service-feature-item">Formatted Drive Recovery</li>
+            <li class="service-feature-item">Lost Partition Recovery</li>
+            <li class="service-feature-item">Corrupted File System Recovery</li>
+            <li class="service-feature-item">USB &amp; Memory Card Recovery</li>
+            <li class="service-feature-item">HDD &amp; SSD Logical Recovery</li>
+          </ul>
+        </div>
+        <div class="service-big-card fade-in" data-delay="150">
+          <span class="service-tag" style="background:var(--accent-green-dim);border-color:rgba(0,255,136,0.3);color:var(--accent-green);">🔧 Diagnostics</span>
+          <h3 class="service-big-title">Storage Diagnostics</h3>
+          <p class="service-big-text">Before any recovery begins, we assess the health and logical state of your storage device to determine the best recovery approach and set realistic expectations.</p>
+          <ul class="service-features">
+            <li class="service-feature-item">Drive Health Assessment</li>
+            <li class="service-feature-item">Logical Issue Detection</li>
+            <li class="service-feature-item">Recovery Feasibility Report</li>
+            <li class="service-feature-item">No-recovery, no-cost policy</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card mt-4 fade-in" style="background:var(--accent-green-dim);border-color:rgba(0,255,136,0.2);margin-top:2rem;">
+        <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
+          <span style="font-size:2rem;">⚠️</span>
+          <div>
+            <div style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary);margin-bottom:0.25rem;">Lost critical data? Act now.</div>
+            <p style="font-size:0.875rem;color:var(--text-secondary);margin:0;">The chances of successful recovery decrease over time as data may be overwritten. Stop using the affected device and contact us immediately.</p>
+          </div>
+          <a href="/contact?service=recovery" class="btn btn-outline" style="margin-left:auto;white-space:nowrap;">Contact Us Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2 class="cta-title">Need a Service?<br/><span class="hero-title-accent">Let's Talk.</span></h2>
+      <p class="cta-subtitle">Tell us what you need and we'll put together the right approach for your situation.</p>
+      <div class="cta-buttons">
+        <a href="/contact" class="btn btn-primary">Request a Quote</a>
+        <a href="/services" class="btn btn-outline">Full Services List</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<th:block th:replace="~{fragments :: footer}"></th:block>
+<script th:src="@{/js/main.js}"></script>
+</body>
+</html>

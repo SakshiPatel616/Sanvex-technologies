@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head('SANVEX Technologies — Cybersecurity &amp; Data Recovery')}"></head>
+<body>
+
+<th:block th:replace="~{fragments :: navbar('home')}"></th:block>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <canvas id="particle-canvas" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;"></canvas>
+    <div class="hero-glow"></div>
+    <div class="hero-glow-2"></div>
+    <div class="hero-inner" style="position:relative;z-index:1;">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Secure · Assure · Navigate
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-title-line">Protecting</span>
+          <span class="hero-title-line"><span class="hero-title-accent">Digital Assets.</span></span>
+          <span class="hero-title-line">Recovering</span>
+          <span class="hero-title-line"><span class="hero-title-accent">Critical Data.</span></span>
+        </h1>
+        <p class="hero-subtitle">
+          SANVEX Technologies provides professional Web Application Security Assessments (VAPT) and Data Recovery services,
+          helping businesses and individuals protect their digital assets and recover valuable information.
+        </p>
+        <div class="hero-actions">
+          <a href="/contact?service=vapt" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Request a Security Assessment
+          </a>
+          <a href="/contact?service=recovery" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            Recover My Data
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-value"><span class="counter" data-target="500" data-suffix="+">0+</span></div>
+            <div class="hero-stat-label">Assessments Completed</div>
+          </div>
+          <div>
+            <div class="hero-stat-value"><span class="counter" data-target="98" data-suffix="%">0%</span></div>
+            <div class="hero-stat-label">Recovery Success Rate</div>
+          </div>
+          <div>
+            <div class="hero-stat-value"><span class="counter" data-target="24" data-suffix="h">0h</span></div>
+            <div class="hero-stat-label">Response Time</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="cyber-shield">
+          <div class="shield-ring shield-ring-1"></div>
+          <div class="shield-ring shield-ring-2"></div>
+          <div class="shield-ring shield-ring-3"></div>
+          <div class="shield-core">
+            <span class="shield-icon">🛡️</span>
+          </div>
+        </div>
+        <div class="hero-float-cards">
+          <div class="float-card float-card-1">
+            <div class="float-card-label">Threat Status</div>
+            <div class="float-card-status">
+              <span class="float-card-status-dot"></span>
+              All Systems Protected
+            </div>
+          </div>
+          <div class="float-card float-card-2">
+            <div class="float-card-label">Last Scan</div>
+            <div class="float-card-value" style="color:var(--text-primary);font-weight:600;">2 mins ago</div>
+          </div>
+          <div class="float-card float-card-3">
+            <div class="float-card-label">Data Recovered</div>
+            <div class="float-card-value" style="color:var(--accent-cyan);font-weight:700;">99.2 GB</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Services Overview -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="text-center mb-4">
+        <div class="section-label" style="justify-content:center;">Core Services</div>
+        <h2 class="section-title" style="margin:0 auto 1rem;">What We Do</h2>
+        <p class="section-subtitle" style="margin:0 auto;">Two focused disciplines. One mission: keeping your digital world safe and recoverable.</p>
+      </div>
+      <div class="services-grid mt-4">
+        <div class="service-big-card fade-in" data-delay="0">
+          <span class="service-tag">🔐 Cybersecurity</span>
+          <h3 class="service-big-title">Web Application Security Assessment (VAPT)</h3>
+          <p class="service-big-text">Professional security testing for web applications to identify and validate vulnerabilities before they can be exploited. We simulate real-world attacks to uncover weaknesses in your systems.</p>
+          <ul class="service-features">
+            <li class="service-feature-item">Manual Security Testing</li>
+            <li class="service-feature-item">Automated Vulnerability Scanning</li>
+            <li class="service-feature-item">Risk Classification &amp; Reporting</li>
+            <li class="service-feature-item">Remediation Guidance &amp; Re-Assessment</li>
+          </ul>
+          <a href="/solutions#vapt" class="btn btn-outline mt-3" style="margin-top:1.75rem;display:inline-flex;">Learn More →</a>
+        </div>
+        <div class="service-big-card fade-in" data-delay="150">
+          <span class="service-tag" style="background:var(--accent-green-dim);border-color:rgba(0,255,136,0.3);color:var(--accent-green);">💾 Data Recovery</span>
+          <h3 class="service-big-title">Digital Data Recovery</h3>
+          <p class="service-big-text">Professional recovery of data from storage devices affected by accidental deletion, formatting, partition loss, or logical corruption. We recover what you thought was gone forever.</p>
+          <ul class="service-features">
+            <li class="service-feature-item">Deleted File &amp; Formatted Drive Recovery</li>
+            <li class="service-feature-item">Lost Partition Recovery</li>
+            <li class="service-feature-item">Corrupted File System Recovery</li>
+            <li class="service-feature-item">USB, SSD &amp; HDD Logical Recovery</li>
+          </ul>
+          <a href="/solutions#recovery" class="btn btn-outline mt-3" style="margin-top:1.75rem;display:inline-flex;">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Why Choose Us -->
+  <section class="section" style="background:linear-gradient(180deg, var(--navy-950) 0%, var(--navy-900) 100%);">
+    <div class="section-inner">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+        <div>
+          <div class="section-label">Why SANVEX</div>
+          <h2 class="section-title">Built on Vision &amp; Excellence</h2>
+          <p class="section-subtitle" style="margin-bottom:2rem;">Every engagement reflects our founding principles: Secure, Assure, Navigate, with Vision and Excellence at the core of every deliverable.</p>
+          <div class="process-steps">
+            <div class="process-step fade-in">
+              <div class="step-number">01</div>
+              <div>
+                <div class="step-title">Structured Methodology</div>
+                <div class="step-text">Every assessment follows a defined scope, tested manually and validated with automated tools, to ensure nothing is missed.</div>
+              </div>
+            </div>
+            <div class="process-step fade-in" data-delay="100">
+              <div class="step-number">02</div>
+              <div>
+                <div class="step-title">Transparent Reporting</div>
+                <div class="step-text">You receive a clear technical report with risk classification, evidence, and actionable remediation steps.</div>
+              </div>
+            </div>
+            <div class="process-step fade-in" data-delay="200">
+              <div class="step-number">03</div>
+              <div>
+                <div class="step-title">Continued Support</div>
+                <div class="step-text">Post-delivery re-assessment ensures your fixes work. We don't just identify — we help you get secure.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+          <div class="card fade-in" data-delay="0">
+            <div class="card-icon card-icon-cyan">🔍</div>
+            <div class="card-title">Deep Manual Testing</div>
+            <p class="card-text">We go beyond automated tools with manual techniques that catch logic flaws and business-level vulnerabilities.</p>
+          </div>
+          <div class="card fade-in" data-delay="100">
+            <div class="card-icon card-icon-green">📋</div>
+            <div class="card-title">Clear Risk Reports</div>
+            <p class="card-text">Findings are classified by severity with executive summaries and technical detail for your dev team.</p>
+          </div>
+          <div class="card fade-in" data-delay="200">
+            <div class="card-icon card-icon-cyan">💡</div>
+            <div class="card-title">Ethical Practice</div>
+            <p class="card-text">All testing is performed under signed agreements with full client awareness and controlled environments.</p>
+          </div>
+          <div class="card fade-in" data-delay="300">
+            <div class="card-icon card-icon-green">⚡</div>
+            <div class="card-title">Fast Turnaround</div>
+            <p class="card-text">We understand downtime costs. Our team works efficiently to minimize disruption and maximize recovery.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <div class="section-label" style="justify-content:center;margin-bottom:1.25rem;">Get Started</div>
+      <h2 class="cta-title">Ready to Secure Your<br/><span class="hero-title-accent">Digital Infrastructure?</span></h2>
+      <p class="cta-subtitle">Whether you need a security assessment or emergency data recovery, our team is ready to help. Contact us for a free initial consultation.</p>
+      <div class="cta-buttons">
+        <a href="/contact" class="btn btn-primary">Request a Free Consultation</a>
+        <a href="/services" class="btn btn-outline">View All Services</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<th:block th:replace="~{fragments :: footer}"></th:block>
+<script th:src="@{/js/main.js}"></script>
+</body>
+</html>

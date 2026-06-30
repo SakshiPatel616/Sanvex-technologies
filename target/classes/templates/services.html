@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head('Services — SANVEX Technologies')}"></head>
+<body>
+
+<th:block th:replace="~{fragments :: navbar('services')}"></th:block>
+
+<main>
+  <div class="page-header">
+    <div class="page-header-inner">
+      <div class="section-label">Our Services</div>
+      <h1 class="page-title">Detailed Service Offerings</h1>
+      <p class="page-subtitle">Two core disciplines. Professional methodology. Clear deliverables.</p>
+    </div>
+  </div>
+
+  <!-- Offensive Security -->
+  <section class="section">
+    <div class="section-inner">
+      <div style="display:flex;align-items:center;gap:1.25rem;margin-bottom:2.5rem;flex-wrap:wrap;">
+        <div class="card-icon card-icon-cyan" style="width:60px;height:60px;font-size:1.75rem;flex-shrink:0;">🔐</div>
+        <div>
+          <div class="section-label" style="margin-bottom:0.375rem;">Offensive Security</div>
+          <h2 class="section-title" style="margin:0;">Web Application Vulnerability Assessment &amp; Penetration Testing</h2>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:3rem;align-items:start;">
+        <div>
+          <div class="card" style="margin-bottom:1.5rem;">
+            <div class="card-title">Purpose</div>
+            <p class="card-text" style="font-size:0.9375rem;line-height:1.75;">
+              Identify and validate security vulnerabilities within web applications through structured security assessments.
+              We simulate adversarial techniques in a controlled, authorized environment to give you an honest picture of your attack surface.
+            </p>
+          </div>
+
+          <div class="section-label" style="margin:2rem 0 1.25rem;">What the Assessment Includes</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div class="card fade-in" data-delay="0" style="padding:1.25rem;">
+              <div style="font-size:1.25rem;margin-bottom:0.625rem;">📋</div>
+              <div class="card-title" style="font-size:0.875rem;">Scope Definition</div>
+              <p class="card-text">Agree on what's in scope before any testing begins — domains, endpoints, user roles.</p>
+            </div>
+            <div class="card fade-in" data-delay="80" style="padding:1.25rem;">
+              <div style="font-size:1.25rem;margin-bottom:0.625rem;">🕵️</div>
+              <div class="card-title" style="font-size:0.875rem;">Manual Security Testing</div>
+              <p class="card-text">Hands-on testing by security analysts to uncover logic flaws and business vulnerabilities.</p>
+            </div>
+            <div class="card fade-in" data-delay="160" style="padding:1.25rem;">
+              <div style="font-size:1.25rem;margin-bottom:0.625rem;">⚙️</div>
+              <div class="card-title" style="font-size:0.875rem;">Automated Validation</div>
+              <p class="card-text">Automated tools used alongside manual testing for complete surface coverage.</p>
+            </div>
+            <div class="card fade-in" data-delay="240" style="padding:1.25rem;">
+              <div style="font-size:1.25rem;margin-bottom:0.625rem;">✅</div>
+              <div class="card-title" style="font-size:0.875rem;">Vulnerability Verification</div>
+              <p class="card-text">Every finding is confirmed before reporting — no false positives in your report.</p>
+            </div>
+            <div class="card fade-in" data-delay="320" style="padding:1.25rem;">
+              <div style="font-size:1.25rem;margin-bottom:0.625rem;">⚠️</div>
+              <div class="card-title" style="font-size:0.875rem;">Risk Classification</div>
+              <p class="card-text">Findings rated by severity to help you prioritize remediation efforts.</p>
+            </div>
+            <div class="card fade-in" data-delay="400" style="padding:1.25rem;">
+              <div style="font-size:1.25rem;margin-bottom:0.625rem;">📄</div>
+              <div class="card-title" style="font-size:0.875rem;">Technical Reporting</div>
+              <p class="card-text">Detailed technical report with evidence, screenshots, and reproduction steps.</p>
+            </div>
+            <div class="card fade-in" data-delay="480" style="padding:1.25rem;">
+              <div style="font-size:1.25rem;margin-bottom:0.625rem;">🛠️</div>
+              <div class="card-title" style="font-size:0.875rem;">Remediation Guidance</div>
+              <p class="card-text">Developer-ready fix recommendations for every identified vulnerability.</p>
+            </div>
+            <div class="card fade-in" data-delay="560" style="padding:1.25rem;">
+              <div style="font-size:1.25rem;margin-bottom:0.625rem;">🔄</div>
+              <div class="card-title" style="font-size:0.875rem;">Re-Assessment</div>
+              <p class="card-text">A follow-up test confirms your fixes work and vulnerabilities are resolved.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card" style="background:var(--accent-cyan-dim);border-color:var(--border-active);">
+            <div style="font-family:var(--font-mono);font-size:0.7rem;color:var(--accent-cyan);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:1rem;">Assessment Scope</div>
+            <ul class="service-features">
+              <li class="service-feature-item">Authentication &amp; Session Management</li>
+              <li class="service-feature-item">Access Control Testing</li>
+              <li class="service-feature-item">SQL &amp; Command Injection</li>
+              <li class="service-feature-item">Cross-Site Scripting (XSS)</li>
+              <li class="service-feature-item">CSRF &amp; SSRF Testing</li>
+              <li class="service-feature-item">Business Logic Testing</li>
+              <li class="service-feature-item">API Security Testing</li>
+              <li class="service-feature-item">Sensitive Data Exposure</li>
+              <li class="service-feature-item">Security Misconfiguration</li>
+            </ul>
+          </div>
+          <a href="/contact?service=vapt" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:1.25rem;">Request VAPT Assessment</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Data Recovery -->
+  <section class="section" style="background:linear-gradient(180deg,var(--navy-950) 0%,var(--navy-900) 100%);">
+    <div class="section-inner">
+      <div style="display:flex;align-items:center;gap:1.25rem;margin-bottom:2.5rem;flex-wrap:wrap;">
+        <div class="card-icon card-icon-green" style="width:60px;height:60px;font-size:1.75rem;flex-shrink:0;">💾</div>
+        <div>
+          <div class="section-label" style="margin-bottom:0.375rem;color:var(--accent-green);">Data Recovery</div>
+          <h2 class="section-title" style="margin:0;">Digital Data Recovery</h2>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:3rem;align-items:start;">
+        <div>
+          <div class="card" style="margin-bottom:1.5rem;border-color:rgba(0,255,136,0.15);">
+            <div class="card-title">Purpose</div>
+            <p class="card-text" style="font-size:0.9375rem;line-height:1.75;">
+              Recover critical business and personal data from storage devices affected by logical failures.
+              Whether it's accidental deletion, a formatted drive, or a corrupted file system — we work systematically to retrieve what matters.
+            </p>
+          </div>
+
+          <div class="section-label" style="margin:2rem 0 1.25rem;color:var(--accent-green);">Recovery Services</div>
+          <div class="services-grid" style="grid-template-columns:1fr 1fr;">
+            <div class="card fade-in" data-delay="0" style="padding:1.25rem;border-color:rgba(0,255,136,0.1);">
+              <div style="font-size:1.25rem;margin-bottom:0.625rem;">🗑️</div>
+              <div class="card-title" style="font-size:0.875rem;">Deleted File Recovery</div>
+              <p class="card-text">Recover files that were deleted from any storage device before overwriting occurred.</p>
+            </div>
+            <div class="card fade-in" data-delay="80" style="padding:1.25rem;border-color:rgba(0,255,136,0.1);">
+              <div style="font-size:1.25rem;margin-bottom:0.625rem;">💿</div>
+              <div class="card-title" style="font-size:0.875rem;">Formatted Drive Recovery</div>
+              <p class="card-text">Recover data from drives that have been accidentally formatted or reformatted.</p>
+            </div>
+            <div class="card fade-in" data-delay="160" style="padding:1.25rem;border-color:rgba(0,255,136,0.1);">
+              <div style="font-size:1.25rem;margin-bottom:0.625rem;">🗂️</div>
+              <div class="card-title" style="font-size:0.875rem;">Lost Partition Recovery</div>
+              <p class="card-text">Locate and restore lost or deleted disk partitions and the data they contained.</p>
+            </div>
+            <div class="card fade-in" data-delay="240" style="padding:1.25rem;border-color:rgba(0,255,136,0.1);">
+              <div style="font-size:1.25rem;margin-bottom:0.625rem;">⚙️</div>
+              <div class="card-title" style="font-size:0.875rem;">Corrupted File System Recovery</div>
+              <p class="card-text">Repair or bypass corrupted file systems to restore access to your data.</p>
+            </div>
+            <div class="card fade-in" data-delay="320" style="padding:1.25rem;border-color:rgba(0,255,136,0.1);">
+              <div style="font-size:1.25rem;margin-bottom:0.625rem;">🔌</div>
+              <div class="card-title" style="font-size:0.875rem;">USB &amp; Memory Card Recovery</div>
+              <p class="card-text">Recover data from USB flash drives, SD cards, and other removable media.</p>
+            </div>
+            <div class="card fade-in" data-delay="400" style="padding:1.25rem;border-color:rgba(0,255,136,0.1);">
+              <div style="font-size:1.25rem;margin-bottom:0.625rem;">🖴</div>
+              <div class="card-title" style="font-size:0.875rem;">HDD &amp; SSD Logical Recovery</div>
+              <p class="card-text">Logical-level recovery from traditional hard drives and solid-state drives.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card" style="background:var(--accent-green-dim);border-color:rgba(0,255,136,0.2);">
+            <div style="font-family:var(--font-mono);font-size:0.7rem;color:var(--accent-green);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:1rem;">Our Recovery Process</div>
+            <div class="process-steps">
+              <div class="process-step">
+                <div class="step-number" style="border-color:rgba(0,255,136,0.3);color:var(--accent-green);background:var(--accent-green-dim);">01</div>
+                <div>
+                  <div class="step-title" style="font-size:0.8125rem;">Initial Consultation</div>
+                  <div class="step-text" style="font-size:0.75rem;">Describe your situation. We assess feasibility before you commit to anything.</div>
+                </div>
+              </div>
+              <div class="process-step" style="padding-top:1rem;">
+                <div class="step-number" style="border-color:rgba(0,255,136,0.3);color:var(--accent-green);background:var(--accent-green-dim);">02</div>
+                <div>
+                  <div class="step-title" style="font-size:0.8125rem;">Storage Diagnostics</div>
+                  <div class="step-text" style="font-size:0.75rem;">We assess the device and determine the best recovery strategy.</div>
+                </div>
+              </div>
+              <div class="process-step" style="padding-top:1rem;">
+                <div class="step-number" style="border-color:rgba(0,255,136,0.3);color:var(--accent-green);background:var(--accent-green-dim);">03</div>
+                <div>
+                  <div class="step-title" style="font-size:0.8125rem;">Recovery Attempt</div>
+                  <div class="step-text" style="font-size:0.75rem;">We perform the recovery and report what was retrieved before you pay.</div>
+                </div>
+              </div>
+              <div class="process-step" style="padding-top:1rem;">
+                <div class="step-number" style="border-color:rgba(0,255,136,0.3);color:var(--accent-green);background:var(--accent-green-dim);">04</div>
+                <div>
+                  <div class="step-title" style="font-size:0.8125rem;">Delivery</div>
+                  <div class="step-text" style="font-size:0.75rem;">Recovered files delivered securely. No recovery = no charge.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="/contact?service=recovery" class="btn btn-outline" style="width:100%;justify-content:center;margin-top:1.25rem;border-color:rgba(0,255,136,0.3);color:var(--accent-green);">Request Data Recovery</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2 class="cta-title">Ready to Get Started?<br/><span class="hero-title-accent">We're Standing By.</span></h2>
+      <p class="cta-subtitle">Free initial consultation for all services. No obligation, no pressure — just honest advice.</p>
+      <div class="cta-buttons">
+        <a href="/contact" class="btn btn-primary">Contact Us Today</a>
+        <a href="/solutions" class="btn btn-outline">View All Solutions</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<th:block th:replace="~{fragments :: footer}"></th:block>
+<script th:src="@{/js/main.js}"></script>
+</body>
+</html>
